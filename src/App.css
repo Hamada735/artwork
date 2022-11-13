@@ -17,6 +17,29 @@
   }
 }
 
+.ul{
+  display: inline-flex; 
+  overflow: hidden; 
+  position: relative; 
+  padding: 0.125rem; 
+  margin-right: 0.5rem; 
+  margin-bottom: 0.5rem; 
+  background-image:linear-gradient(to bottom right, var(--tw-gradient-stops)); 
+  background-color: #7C3AED; 
+  background-color: #3B82F6; 
+  color: #111827; 
+  font-size: 0.875rem;
+  line-height: 1.25rem; 
+  font-weight: 500; 
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 0.5rem; 
+  
+}
+.ul:hover {
+  color: #ffffff; 
+  }
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

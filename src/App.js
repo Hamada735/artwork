@@ -8,7 +8,6 @@ function App() {
     <div className="App">
       <Navbar/>
       <Paintings/>
-      <p>"g check"</p>
     </div>
   );
 }
