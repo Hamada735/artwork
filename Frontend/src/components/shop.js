@@ -40,7 +40,7 @@ function Shop(props) {
     >
     <div class="grid grid-rows-1">
     <ExitButton closeModal={closeModal}/>
-    <OrderForm painting={painting}/>
+    <OrderForm painting={painting} closeModal={closeModal}/>
     </div>
     </Modal>
     </div>

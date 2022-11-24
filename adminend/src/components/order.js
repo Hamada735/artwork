@@ -8,7 +8,7 @@ function Order(props) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({order})
   };
-  fetch('http://localhost:8080/removeorder', requestOptions)
+  fetch('https://devweb2022.cis.strath.ac.uk/ykb20128-nodejs/removeorder', requestOptions)
       .then(response => response.json())
       .then(props.rerender(props.order.id));
       

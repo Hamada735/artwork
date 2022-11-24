@@ -32,7 +32,6 @@ function Admin(props) {
     }
     
     function afterOpenModal() {
-        // references are now sync'd and can be accessed.
         subtitle.style.color = '#f00';
     }
     
@@ -46,7 +45,6 @@ function Admin(props) {
     }
 
     function afterOpenModal2() {
-        // references are now sync'd and can be accessed.
         subtitle.style.color = '#f00';
     }
     
@@ -56,13 +54,13 @@ function Admin(props) {
 
   return (
     <div>
-        {/* fata flaw: clicking outside of the modal for login bypasses it, does make testing easier, can be easily changed with a style change */}
+        {/* fatal flaw: clicking outside of the modal for login bypasses it, does make testing easier, can be easily changed with a style change */}
     <Modal
     isOpen={modalIsOpen}
     onAfterOpen={afterOpenModal}
     onRequestClose={closeModal}
     style={"w-full max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 items-center"}
-    contentLabel="Example Modal"
+    contentLabel="Login Modal"
     >
     <Login closeModal={closeModal}/>
     </Modal>
@@ -71,7 +69,7 @@ function Admin(props) {
     onAfterOpen={afterOpenModal2}
     onRequestClose={closeModal2}
     style={"w-full max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 items-center"}
-    contentLabel="Example Modal"
+    contentLabel="Add Painting Modal"
     >
     <ExitButton closeModal={closeModal2}/>
     <AddPainting reloadpaintings={props.reloadpaintings} closeModal={closeModal2}/>

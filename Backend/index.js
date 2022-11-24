@@ -4,9 +4,9 @@ function databasehandler() {
     const mysql = require('mysql');
     const express = require('express');
     const fileUpload = require('express-fileupload');
+    // const path = require('path');
     const app = express();
     const PORT = 8080;
-    const path = require('path');
 
     app.listen(
         PORT,
@@ -47,12 +47,12 @@ function databasehandler() {
     getorders();
     app.use(express.json())
     app.use(fileUpload())
-    console.log(__dirname)
-    app.use(express.static(path.join(__dirname, 'build')));
+    // console.log(__dirname)
+    // app.use(express.static(path.join(__dirname, 'build')));
 
-    app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-    });
+    // app.get('/', function (req, res) {
+    // res.sendFile(path.join(__dirname, 'build', 'index.html'));
+    // });
     
     // special thanks to https://stackoverflow.com/a/18311469 this code is only useful for allowing cors for development
     app.use(function (req, res, next) {

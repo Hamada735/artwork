@@ -7,6 +7,7 @@ function Form(props) {
 
     function placeOrder(data){
         props.orderpainting(data)
+        props.closeModal()
     };
     const btn_style = "block p-4 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-md"
     const label_style = "block mb-2 text-sm font-medium text-gray-900"
@@ -18,7 +19,7 @@ function Form(props) {
         </div>
         <div class="mb-6">
         <label class={label_style}>Phone Number</label>
-        <input id="number" class={btn_style} type="tel" {...register("phone")} placeholder="1 2 three to the 4" required/>
+        <input id="number" class={btn_style} type="text" {...register("phone")} placeholder="1 2 three to the 4"  required pattern="[0-9]{8,15}"/>
         </div>
         <div class="mb-6">
         <label class={label_style}>Email</label>

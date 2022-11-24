@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/~ykb20128/sasniamsosadiduasn/admin/static/css/main.55e30c07.css",
+    "main.js": "/~ykb20128/sasniamsosadiduasn/admin/static/js/main.02cfac02.js",
+    "static/js/787.516f9c38.chunk.js": "/~ykb20128/sasniamsosadiduasn/admin/static/js/787.516f9c38.chunk.js",
+    "index.html": "/~ykb20128/sasniamsosadiduasn/admin/index.html",
+    "main.55e30c07.css.map": "/~ykb20128/sasniamsosadiduasn/admin/static/css/main.55e30c07.css.map",
+    "main.02cfac02.js.map": "/~ykb20128/sasniamsosadiduasn/admin/static/js/main.02cfac02.js.map",
+    "787.516f9c38.chunk.js.map": "/~ykb20128/sasniamsosadiduasn/admin/static/js/787.516f9c38.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55e30c07.css",
+    "static/js/main.02cfac02.js"
+  ]
+}

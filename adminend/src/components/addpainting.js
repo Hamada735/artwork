@@ -21,36 +21,13 @@ function AddPainting(props) {
       formData.append('price', data.price);
       formData.append('description', data.description);
       
-      axios.post('http://localhost:8080/addpainting', formData).then(res => {
-        //Now do what you want with the response;
+      axios.post('https://devweb2022.cis.strath.ac.uk/ykb20128-nodejs/addpainting', formData).then(res => {
       })
     
       reloadpaintings(data)
       props.closeModal()
   };
-
-  // function placeOrder(data){
-  //     console.log("painting to be added",data)
-  //     let file = data.painting[0];
-  //     let reader = new FileReader();
-  //     reader.onload = function() {
-  //       data.painting = reader.result.split(",")[1];
-  //       // image editing
-  //       // ...
-  //     };
-  //     reader.readAsDataURL(file);
-  //     const requestOptions = {
-  //       method: 'POST',
-  //       headers: { 'Content-Type': 'application/json' },
-  //       body: JSON.stringify({data})
-  //   };
-  //   fetch('http://localhost:8080/addpainting', requestOptions)
-  //       .then(response => response.json());
-  //     reloadpaintings(data)
-  // };
-
-
-
+  
   const btn_style = "p-4 text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-md"
   const s_btn_style = "p-4 text-gray-900 bg-gray-200 rounded-lg border border-gray-300 sm:text-md"
   const label_style = "mb-2 text-sm font-medium text-gray-900"

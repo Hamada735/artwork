@@ -4,12 +4,12 @@
   "icons": [
     {
       "src": "//live.staticflickr.com/8281/7714145320_0de1f6e87e_c.jpg",
-      "type": "image/png",
+      "type": "image/jpg",
       "sizes": "192x192"
     },
     {
       "src": "//live.staticflickr.com/8281/7714145320_0de1f6e87e_c.jpg",
-      "type": "image/png",
+      "type": "image/jpg",
       "sizes": "512x512"
     }
   ],

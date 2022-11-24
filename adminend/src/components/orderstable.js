@@ -15,10 +15,10 @@ function orderstable(props) {
                 
                 );}
   return (
-    <div>
+    <div class="">
       <h1 class="text-4xl">List of orders</h1>
       <br></br>
-    <div class="w-full overflow-x-auto relative p-4">
+    <div class="flex justify-center w-full overflow-x-auto p-4">
     <table class="w-11/12 text-md text-center text-gray-700">
     <thead>
     <tr class="border border-slate-500 text-xs text-gray-700 uppercase">

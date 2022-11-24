@@ -12,7 +12,7 @@ function orderForm(props) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({form})
   };
-  fetch('http://localhost:8080/orderpainting', requestOptions)
+  fetch('https://devweb2022.cis.strath.ac.uk/ykb20128-nodejs/orderpainting', requestOptions)
       .then(response => response.json())
     
   }
@@ -44,7 +44,7 @@ function orderForm(props) {
         </div>
         </div>
         <div class="row-span-3">
-        <Form orderpainting={orderpainting}/>
+        <Form orderpainting={orderpainting} closeModal={props.closeModal}/>
         </div>
     </div>
   </div>
