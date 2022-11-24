@@ -54,7 +54,7 @@ function AddPainting(props) {
       </div>
       <div class="grid mb-6">
       <label class={label_style}>Price</label>
-      <input id="price"class={btn_style} type="text" {...register("price")} placeholder="Priceless" required pattern="[0-9]+(\\.[0-9][0-9]?)?"/>
+      <input id="price"class={btn_style} type="text" {...register("price")} placeholder="Priceless" required/>
       </div>
       <div class="grid mb-6">
       <label class={label_style}>Description</label>
